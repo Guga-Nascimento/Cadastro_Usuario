@@ -6,7 +6,11 @@ if(isset($_POST['submit']) && !empty($_POST['email']) && !empty($_POST['senha'])
     $email = $_POST['email'];
     $senha = $_POST['senha'];
 
-    $sql = "SELECT * FROM cadastro WHERE email = $email and senha = $senha";
+    $sql = "SELECT * FROM cadastro WHERE email = '$email' and senha = '$senha'";
+
+    $result = $conexao->query($sql);
+
+    
 }
 else
 {
