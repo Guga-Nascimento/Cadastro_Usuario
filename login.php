@@ -7,10 +7,10 @@
     <style>
         body{
             font-family: 'Courier New', Courier, monospace;
-            background-image: linear-gradient(45deg, cyan,yellow);
+            background-image: linear-gradient(to right, rgb(4, 155, 155),rgb(116, 116, 3));
         }
         div{
-            background-color: rgba( 87, 62, 62, 0.6);
+            background-color: rgba( 87, 62, 62, 0.3);
             position: absolute;
             top: 50%;
             left: 50%;
@@ -26,8 +26,9 @@
             font-size: 16px;
             border-radius: 8px;
         }
-        button{
-            background: dodgerblue;
+        .inputSubmit{
+            background-image:linear-gradient(to left, rgb(4, 155, 155),rgb(116, 116, 3));
+           
             border: none;
             padding: 10px;
             width: 100%;
@@ -35,19 +36,22 @@
             color: bisque;
             
         }
-        button:hover{
-            background-color: deepskyblue;
+        .inputSubmit:hover{
+            background-image:linear-gradient(to right, rgb(4, 155, 155),rgb(116, 116, 3));
         }
     </style>
 </head>
 <body>
+    <a href="home.php">Voltar</a>
     <div>
         <h1>            Login        </h1>
-        <input type="text" placeholder="Nome">
+        <form action="testLogin.php" method="POST">
+        <input type="text" name="email" placeholder="Email">
         <br><br>
-        <input type="password" placeholder="Senha">
+        <input type="password" name="senha" placeholder="Senha">
         <br><br>
-        <button>Enviar</button>
+        <input class="inputSubmit" type="submit" name="submit" value="Enviar">
+        </form>
     </div>
     
 </body>
