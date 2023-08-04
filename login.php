@@ -27,8 +27,7 @@
             border-radius: 8px;
         }
         .inputSubmit{
-            background-image:linear-gradient(to left, rgb(4, 155, 155),rgb(116, 116, 3));
-           
+            background-image:linear-gradient(to left, rgb(4, 155, 155),rgb(116, 116, 3));           
             border: none;
             padding: 10px;
             width: 100%;
