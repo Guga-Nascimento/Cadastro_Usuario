@@ -14,11 +14,11 @@
         $estado = $_POST['estado'];
         $endereco = $_POST['endereco'];
         
-        $sqlInsert = "UPDATE cadastro 
-        SET nome='$nome',senha='$senha',email='$email',telefone='$telefone',sexo='$sexo',data_nasc='$data_nasc',cidade='$cidade',estado='$estado',endereco='$endereco'
-        WHERE id=$id";
-        $result = $conexao->query($sqlInsert);
-        print_r($result);
+        $sqlUpdate = "UPDATE cadastro 
+        SET nome='$nome',senha='$senha',email='$email',telefone='$telefone',genero='$sexo',data_nasc='$data_nasc',cidade='$cidade',estado='$estado',endereco='$endereco'
+        WHERE id='$id'";
+        $result = $conexao->query($sqlUpdate);
+        //print_r($result);
     }
     header('Location: sistema.php');
 

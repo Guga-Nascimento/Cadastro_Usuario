@@ -40,8 +40,8 @@
     <title>Formulário | GN</title>
     <style>
         body{
-            font-family: Arial, Helvetica, sans-serif;
-            background-image: linear-gradient(to right, rgb(20, 147, 220), rgb(17, 54, 71));
+            font-family: 'Courier New', Courier, monospace;
+            background-image: linear-gradient(to right, rgb(4, 155, 155),rgb(116, 116, 3));
         }
         .box{
             color: white;
@@ -97,7 +97,7 @@
             outline: none;
             font-size: 15px;
         }
-        #submit{
+        #update{
             background-image: linear-gradient(to right,rgb(0, 92, 197), rgb(90, 20, 220));
             width: 100%;
             border: none;
@@ -107,7 +107,7 @@
             cursor: pointer;
             border-radius: 10px;
         }
-        #submit:hover{
+        #update:hover{
             background-image: linear-gradient(to right,rgb(0, 80, 172), rgb(80, 19, 195));
         }
     </style>
@@ -167,7 +167,7 @@
                 </div>
                 <br><br>
 				<input type="hidden" name="id" value=<?php echo $id;?>>
-                <input type="submit" name="update" id="submit">
+                <input type="submit" name="update" id="update">
             </fieldset>
         </form>
     </div>
